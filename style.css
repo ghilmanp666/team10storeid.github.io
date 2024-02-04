@@ -1,0 +1,125 @@
+:root
+{
+    --pot-black : #161616;
+    --shadow : #363636;
+    --green : #00EB09;
+    --white : #fff;
+    --black : #000000;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: 'Tahoma';
+}
+body
+{
+    background-color: var(--shadow);
+    color: var(--white);
+}
+
+header
+{
+    text-align: center;
+    background-color: var(--pot-black);
+    position: fixed;
+    width: 100%;
+    font-weight: bold;
+    padding: 2%;
+    top: 0%;
+}
+
+.title
+{
+    color: var(--white);
+    border-bottom: 1px solid white;
+    font-size: 15pt;
+}
+
+.input-search
+{
+    width: 30%;
+    border: none;
+    border-radius: 0 0 0 10px;
+    padding: 2px;
+}
+
+.input-submit
+{
+    margin-left: -5px;
+    border: none;
+    border-radius: 0 10px 0 0;
+    padding: 2px;
+    background-color: var(--black);
+    color: var(--white);
+    width: 5%;
+    font-weight: bold;
+}
+
+nav
+{
+    margin-top: 15px; 
+}
+
+nav ul
+{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+nav ul li a
+{
+    color: var(--white);
+}
+
+nav ul li a:hover
+{
+    border-bottom: 3px solid var(--white);
+}
+
+.slider
+{
+    margin-top: 10%;
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 65%;
+}
+
+.slider h4
+{
+    margin-top: 20%;
+}
+
+.slides
+{
+    display: flex;
+    width: 50rem;
+    overflow: hidden;
+}
+
+.slides img 
+{
+    border-radius: 10px;
+}
+
+.slide
+{
+    width: 50rem;
+    transition: .5s;
+}
+
+.choose_1:checked ~ .slides > .s1
+{
+    margin-left: -0rem;
+}
+
+.choose_2:checked ~ .slides > .s1
+{
+    margin-left: -50rem;
+}
